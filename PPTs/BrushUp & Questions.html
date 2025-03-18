@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding-left: 80px; /* Adjust the value as needed */
+            padding-right: 80px; /* Adjust the value as needed */
+            line-height: 1.8; /* Increase line spacing to 1.2 times the normal */
+        }
+        h2 {
+            color: #007bff; /* Set the color of the text */
+        }
+        .middle {
+            width: 100%; /* Set the width to 100% */
+            padding: 20px;
+            margin: 5px 5px 5px 5px;
+        }
+        .container {
+            display: flex;
+            column-count: 2; /*设置为2表示两栏*/
+        }
+        .left-column, .right-column {
+            width: 50%;
+            padding: 10px; /* 增加内边距 */
+            margin: 5px;
+        }
+        .left-column {
+            background-color: #f8f9fa;
+        }
+        .right-column {
+            background-color: #dee2e6;
+        }
+    </style>
+</head>
+<body>
+    <h2>Lecture 1 Introduction</h2>
+
+    <div class="container">
+        <div class="left-column">
+            <h3>Summary</h3>
+            <ul>
+                <li><strong>Variables and construct</strong>
+                    <ul>
+                        <li>variable: a placeholder</li>
+                        <li>construct: a scientific elaborated idea</li>
+                    </ul>
+                </li>
+                <li><strong>Latent and manifest variable</strong>
+                    <ul>
+                        <li>latent: not observed</li>
+                        <li>manifest: observed</li>
+                    </ul>
+                </li>
+                <li><strong>the priority of theory</strong>
+                    <ul>
+                        <li>sem is a confirmatory approach</li>
+                    </ul>
+                </li>
+                <li><strong>the specificities of the model</strong>
+                    <ul>
+                        <li>models are more detailed than theories</li>
+                    </ul>
+                </li>
+                <li><strong>The need to be complete</strong>
+                    <ul>
+                        <li>all the possible variables(like complete speed) should be considered, and we should test extends to the whole model</li>
+                    </ul>
+                </li>
+                <li><strong>the step from the manifest to latent levels</strong>
+                    <ul>
+                        <li>The transfer is accomplished by a correction procedure that eliminates the influence of error</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="right-column">
+            <h3>Questions</h3>
+            <ul>
+                <li><strong>what is a construct</strong>
+                    <ul>
+                        <li>a theoretical concept / an idea</li>
+                        <li>is a concept of science</li>
+                        <li>is a concept that has been shaped as the result of conducting research 
+                            <ul>
+                                <li>e.g. competency, extraversion, mathematical reasoning</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><strong>What distinguishes manifest from latent</strong>
+                    <ul>
+                        <li>manifest can be seen and directly tested, and latent variables can't be seen and can't be tested</li>
+                    </ul>
+                </li>
+                <li><strong>what is the meaning of confirmatory</strong>
+                    <ul>
+                        <li>a methodical and theory-driven approach to validating hypotheses about the structure of relationships among variables, with the goal of confirming the accuracy of theoretical models.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div STYLE="page-break-after: always;"></div> <!-- Add a page break after the first part -->
+    <h2>Lecture 2 Important concepts and definitions</h2>
+
+    <div class="container">
+        <div class="left-column">
+            <h3>Summary</h3>
+            <ul>
+                <li><strong>Introductory remarks</strong>
+                    <ul>
+                        <li>exogeneous latent variables: independent latent variables</li>
+                        <li>endogeneous latent variables: dependent latent variables</li>
+                    </ul>
+                </li>
+                <li><strong>Formation of hypotheses</strong>
+                    <ul>
+                        <li>the formation usually starts with a research question</li>
+                        <li>example: The more conscientious a person is, the larger the professional success of this person</li>
+                    </ul>
+                </li>
+                <li><strong>path diagram and specification of model</strong></li>
+                <li><strong>Identification of the structure of models</strong></li>
+            </ul>
+        </div>
+
+        <div class="right-column">
+            <h3>Questions</h3>
+            <ul>
+                <li><strong>what are the components of a complete structural equation model</strong>
+                    <ul>
+                        <li>structural model</li>
+                        <li>measurement models</li>
+                    </ul>
+                </li>
+                <li><strong> What is the basic assumption regarding the relationship of the true part (=systematic part) and the residual part of measurement</strong>
+                    <ul>
+                        <li>independent with each other</li>
+                    </ul>
+                </li>
+                <li><strong>What means that "the model is identified"</strong>
+                    <ul>
+                        <li>the degree of freedom is large than 0</li>
+                    </ul>
+                </li>
+                <li><strong>What is the meaning of degree of freedom</strong>
+                    <ul>
+                        <li>df = s - t</li>
+                        <li>Number of items of information <strong>s</strong> = n(n+1)/2</li>
+                        <li>t =  num(parameters to be estimated)</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="middle">
+        <ul>
+            <li><strong>Assumptions of structural equation models</strong></li>
+            <ul>
+                <li>latent and residual variables do not correlate with each other</li>
+                <li>different residual variables do not correlate with each other</li>
+                <li>note: there are two types of residuals</li>
+                <ul>
+                    <li>residuals as characteristics of individual manifest variables</li>
+                    <li>residuals as random error (= remainders)</li>
+                </ul>
+            </ul>
+        </ul>
+    </div>
+
+    <div STYLE="page-break-after: always;"></div> <!-- Add a page break after the second part -->
+        
+    <h2>Lecture 3 The Data and Their Properties = Analysis of the covariance matrix (AOC)</h2>
+
+    <div class="container">
+        <div class="left-column">
+            <h3>Summary</h3>
+            <ul>
+                <li><strong>The foundations</strong>
+                    <ul>
+                        <li> the method amounts to the comparison of empirical and model-based covariance matrices</li>
+                    </ul>
+                </li>
+                <li><strong>The requirements regarding data</strong>
+                    <ul>
+                        <li>manifest and latent variables must show the same properties</li>
+                    </ul>
+                </li>
+                <li><strong>The characteristic properties of data</strong>
+                    <ul>
+                        <li>important properties are scale and distribution</li>
+                    </ul>
+                </li>
+                <li><strong>The typical data problems</strong>
+                    <ul>
+                        <li>data frequently do not show the desirable properties so that special adaptation may be required</li>
+                    </ul>
+                </li>
+                <li><strong>Covariances and correlations as input</strong>
+                    <ul>
+                        <li>the selection of special types of input and estimation method helps to overcome the problems</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="right-column">
+            <h3>Questions</h3>
+            <ul>
+                <li><strong>Which data properties are desirable in CFA and SEM</strong>
+                    <ul>
+                        <li>continuous, normally distributed data</li>
+                    </ul>
+                </li>
+                <li><strong>Which correlation type should be selected for investigating binary data</strong>
+                    <ul>
+                        <li>tetrachoric correlations 四分相关</li>
+                    </ul>
+                </li>
+                <li><strong>What data type requires the use of polychoric correlations</strong>
+                    <ul>
+                        <li>the data are ordered-categorical (or ordinal)</li>
+                    </ul>
+                </li>
+                <li><strong>Which data type can be used for representing males and females</strong>
+                    <ul>
+                        <li>bineray data</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <div STYLE="page-break-after: always;"></div> <!-- Add a page break after the part -->
+        
+    <h2>Lecture 4 The model of measurement</h2>
+
+    <div class="container">
+        <div class="left-column">
+            <h3>Summary</h3>
+            <ul>
+                <li><strong>See Slides</strong>
+                    <ul>
+                        <li>A small history</li>
+                        <li>The types
+                            <ul>
+                            <li>Established CFA models</li>
+                            <li>One-factor model and two-factor model</li>
+                            <li>mixed models</li>
+                        </ul>
+                        </li>
+                        <li>Modelss with link functions</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="right-column">
+            <h3>Questions</h3>
+            <ul>
+                <li><strong>What are the components of the congeneric model of measurement?</strong>
+                    <ul>
+                        <li>Observations; Common Factor; Factor loading; Error Terms</li>
+                    </ul>
+                </li>
+                <li><strong>Which parameter is only specific for the item</strong>
+                    <ul>
+                        <li>Factor loading (λ)</li>
+                    </ul>
+                </li>
+                <li><strong>What is the major difference between the congeneric model and the bifactor model</strong>
+                    <ul>
+                        <li><u>Congeneric model</u>: It assumes that all measurement items measure the same latent construct, but allows different items to have different factor loadings and different error terms. It does not assume that there is a general factor that affects all measurement items, but allows correlations between items.</li>
+                        <li><u>Bifactor model</u>: It contains a general factor that has direct loadings on all observed variables. In addition, there are several grouping factors that only load on subsets of observed variables. A key feature of the bifactor model is that these grouping factors are orthogonal (i.e., uncorrelated) with the general factor.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div STYLE="page-break-after: always;"></div> <!-- Add a page break after the part -->
+        
+    <h2>Lecture 5 Exploratory Factor Analysis</h2>
+
+    <div class="container">
+        <div class="left-column">
+            <h3>Summary</h3>
+            <ul>
+                <li><strong>Basic Concepts</strong>
+                    <ul>
+                        <li><u>item</u>: a denotation that is used in assessment and exploratory factor analysis for questions / statement / task of a test and a questionnaire</li>
+                        <li><u>factor</u>: is a dimensions that characterizes a set of items</li>
+                        <li><u>the basic idea of explorative factor analysis</u>: search for (underlying) dimensions</li>
+                            <!-- … search for (underlying) dimensions</li> -->
+                    </ul>
+                </li>
+                <li><strong>Fundamental theorem</strong>
+                    <ul>
+                        <li>A standardized score is described as a linear combination of factor scores, of their weights and an error component</li>
+                    </ul>
+                </li>
+                <li><strong>Communality estimation</strong>
+                    <ul>
+                        <li>estimation of explained variance</li>
+                    </ul>
+                </li>
+                <li><strong>Factor interpretation</strong>
+                    <ul>
+                        <li>find the common categories for factors</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="right-column">
+            <h3>Questions</h3>
+            <ul>
+                <li><strong>What are the purposes for selecting FA?</strong>
+                    <ul>
+                        <li>Search for structure; Data reduction; Check for assumed structure; Construction of questionnaire</li>
+                    </ul>
+                </li>
+                <li><strong>What type of variance is represented by the communality</strong>
+                    <ul>
+                        <li>true(systematic) variance of the item</li>
+                    </ul>
+                </li>
+                <li><strong>Why is factor rotation conducted</strong>
+                    <ul>
+                        <li>The results of factor extraction usually leads to a bad interpretation; The literal aim of rotation is the achievment of factors that enable a "good" interpretation</li>
+                        <li><u>Formal goal of factor rotation(criterion)</u>: simple structure of the pattern of factor loadings</li>
+                    </ul>
+                </li>
+                <li><strong>What is the principle of factor rotation</strong>
+                    <ul>
+                        <li>each variable should show a large loading on one factor only and small loading on the other factors</li>
+                        <li>each factor should have several high loadings</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <div STYLE="page-break-after: always;"></div> <!-- Add a page break after the part -->
+
+ 
+</body>
+</html>
+
+

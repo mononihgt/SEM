@@ -1,0 +1,31 @@
+
+DATA: FILE IS ÈðÎÄÑÛ¶¯.txt;
+
+
+VARIABLE: NAMES ARE 
+                    subject d1-d9 d_score span1-span3 wmc r_score w_score;
+	  
+
+          USEVARIABLE = d_score d4 d5 d9 span1-span3;
+
+          Missing are all(99);
+
+ANALYSIS:
+     BOOTSTRAP=1000;
+
+MODEL: 
+	str by d4 d5 d9;
+	wmc by span1-span3;
+
+	str on wmc;
+
+	d_score on str wmc;
+
+MODEL INDIRECT:
+
+
+     d_score IND str wmc;
+
+
+OUTPUT: standardized CINTERVAL(BOOTSTRAP);
+

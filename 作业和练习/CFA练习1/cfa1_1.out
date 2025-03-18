@@ -1,0 +1,461 @@
+Mplus VERSION 8.3
+MUTHEN & MUTHEN
+10/21/2024   5:51 PM
+
+INPUT INSTRUCTIONS
+
+  TITLE:4 factor;
+  DATA: FILE IS self.txt;
+   TYPE IS COVARIANCE;
+   NOBSERVATIONS ARE 265;
+  VARIABLE:
+    NAMES ARE T1-T16;
+    USEVAR = T1-T16;
+  MODEL:
+    GSC by T1-T4;
+    ASC by T5-T8;
+    ESC by T9-T12;
+    MSC by T13-T16;
+    T14 WITH T15;
+
+  OUTPUT:
+    MODINDICES STANDARDIZED;
+
+
+
+
+INPUT READING TERMINATED NORMALLY
+
+
+
+4 factor;
+
+SUMMARY OF ANALYSIS
+
+Number of groups                                                 1
+Number of observations                                         265
+
+Number of dependent variables                                   16
+Number of independent variables                                  0
+Number of continuous latent variables                            4
+
+Observed dependent variables
+
+  Continuous
+   T1          T2          T3          T4          T5          T6
+   T7          T8          T9          T10         T11         T12
+   T13         T14         T15         T16
+
+Continuous latent variables
+   GSC         ASC         ESC         MSC
+
+
+Estimator                                                       ML
+Information matrix                                        EXPECTED
+Maximum number of iterations                                  1000
+Convergence criterion                                    0.500D-04
+Maximum number of steepest descent iterations                   20
+
+Input data file(s)
+  self.txt
+
+Input data format  FREE
+
+
+
+THE MODEL ESTIMATION TERMINATED NORMALLY
+
+
+
+MODEL FIT INFORMATION
+
+Number of Free Parameters                       39
+
+Loglikelihood
+
+          H0 Value                       -6553.977
+          H1 Value                       -6484.978
+
+Information Criteria
+
+          Akaike (AIC)                   13185.953
+          Bayesian (BIC)                 13325.563
+          Sample-Size Adjusted BIC       13201.912
+            (n* = (n + 2) / 24)
+
+Chi-Square Test of Model Fit
+
+          Value                            137.997
+          Degrees of Freedom                    97
+          P-Value                           0.0040
+
+RMSEA (Root Mean Square Error Of Approximation)
+
+          Estimate                           0.040
+          90 Percent C.I.                    0.023  0.054
+          Probability RMSEA <= .05           0.866
+
+CFI/TLI
+
+          CFI                                0.974
+          TLI                                0.968
+
+Chi-Square Test of Model Fit for the Baseline Model
+
+          Value                           1700.616
+          Degrees of Freedom                   120
+          P-Value                           0.0000
+
+SRMR (Standardized Root Mean Square Residual)
+
+          Value                              0.046
+
+
+
+MODEL RESULTS
+
+                                                    Two-Tailed
+                    Estimate       S.E.  Est./S.E.    P-Value
+
+ GSC      BY
+    T1                 1.000      0.000    999.000    999.000
+    T2                 1.083      0.154      7.041      0.000
+    T3                 0.845      0.132      6.410      0.000
+    T4                 0.941      0.132      7.151      0.000
+
+ ASC      BY
+    T5                 1.000      0.000    999.000    999.000
+    T6                 1.283      0.152      8.451      0.000
+    T7                 1.267      0.157      8.084      0.000
+    T8                 1.274      0.159      8.023      0.000
+
+ ESC      BY
+    T9                 1.000      0.000    999.000    999.000
+    T10                0.893      0.104      8.623      0.000
+    T11                0.663      0.148      4.479      0.000
+    T12                0.848      0.117      7.235      0.000
+
+ MSC      BY
+    T13                1.000      0.000    999.000    999.000
+    T14                0.946      0.065     14.523      0.000
+    T15                1.026      0.055     18.604      0.000
+    T16                0.659      0.051     13.043      0.000
+
+ ASC      WITH
+    GSC                0.411      0.078      5.273      0.000
+
+ ESC      WITH
+    GSC                0.352      0.072      4.920      0.000
+    ASC                0.459      0.078      5.889      0.000
+
+ MSC      WITH
+    GSC                0.608      0.113      5.381      0.000
+    ASC                0.825      0.129      6.394      0.000
+    ESC                0.336      0.095      3.554      0.000
+
+ T14      WITH
+    T15               -0.346      0.073     -4.742      0.000
+
+ Variances
+    GSC                0.612      0.137      4.457      0.000
+    ASC                0.553      0.125      4.422      0.000
+    ESC                0.667      0.117      5.720      0.000
+    MSC                2.162      0.268      8.082      0.000
+
+ Residual Variances
+    T1                 1.201      0.126      9.551      0.000
+    T2                 1.115      0.124      9.019      0.000
+    T3                 1.067      0.107      9.944      0.000
+    T4                 0.764      0.087      8.762      0.000
+    T5                 1.400      0.128     10.920      0.000
+    T6                 0.625      0.069      9.113      0.000
+    T7                 0.886      0.089      9.934      0.000
+    T8                 0.946      0.094     10.025      0.000
+    T9                 0.658      0.083      7.940      0.000
+    T10                0.654      0.075      8.671      0.000
+    T11                2.596      0.233     11.133      0.000
+    T12                1.194      0.118     10.143      0.000
+    T13                0.996      0.106      9.377      0.000
+    T14                0.922      0.126      7.334      0.000
+    T15                0.186      0.075      2.469      0.014
+    T16                1.013      0.092     10.971      0.000
+
+
+STANDARDIZED MODEL RESULTS
+
+
+STDYX Standardization
+
+                                                    Two-Tailed
+                    Estimate       S.E.  Est./S.E.    P-Value
+
+ GSC      BY
+    T1                 0.581      0.053     11.043      0.000
+    T2                 0.626      0.050     12.476      0.000
+    T3                 0.539      0.055      9.820      0.000
+    T4                 0.644      0.049     13.088      0.000
+
+ ASC      BY
+    T5                 0.532      0.048     11.046      0.000
+    T6                 0.770      0.031     25.112      0.000
+    T7                 0.707      0.036     19.875      0.000
+    T8                 0.697      0.036     19.193      0.000
+
+ ESC      BY
+    T9                 0.709      0.044     16.058      0.000
+    T10                0.669      0.046     14.520      0.000
+    T11                0.319      0.064      4.988      0.000
+    T12                0.535      0.054      9.971      0.000
+
+ MSC      BY
+    T13                0.827      0.023     36.501      0.000
+    T14                0.823      0.029     28.805      0.000
+    T15                0.961      0.016     59.207      0.000
+    T16                0.694      0.033     20.724      0.000
+
+ ASC      WITH
+    GSC                0.706      0.055     12.775      0.000
+
+ ESC      WITH
+    GSC                0.551      0.072      7.689      0.000
+    ASC                0.756      0.051     14.683      0.000
+
+ MSC      WITH
+    GSC                0.528      0.058      9.061      0.000
+    ASC                0.755      0.037     20.430      0.000
+    ESC                0.280      0.069      4.035      0.000
+
+ T14      WITH
+    T15               -0.834      0.313     -2.670      0.008
+
+ Variances
+    GSC                1.000      0.000    999.000    999.000
+    ASC                1.000      0.000    999.000    999.000
+    ESC                1.000      0.000    999.000    999.000
+    MSC                1.000      0.000    999.000    999.000
+
+ Residual Variances
+    T1                 0.663      0.061     10.842      0.000
+    T2                 0.608      0.063      9.685      0.000
+    T3                 0.710      0.059     11.995      0.000
+    T4                 0.585      0.063      9.229      0.000
+    T5                 0.717      0.051     13.986      0.000
+    T6                 0.407      0.047      8.625      0.000
+    T7                 0.500      0.050      9.933      0.000
+    T8                 0.513      0.051     10.129      0.000
+    T9                 0.497      0.063      7.928      0.000
+    T10                0.552      0.062      8.938      0.000
+    T11                0.898      0.041     22.071      0.000
+    T12                0.713      0.058     12.404      0.000
+    T13                0.315      0.038      8.404      0.000
+    T14                0.323      0.047      6.857      0.000
+    T15                0.076      0.031      2.422      0.015
+    T16                0.519      0.046     11.161      0.000
+
+
+STDY Standardization
+
+                                                    Two-Tailed
+                    Estimate       S.E.  Est./S.E.    P-Value
+
+ GSC      BY
+    T1                 0.581      0.053     11.043      0.000
+    T2                 0.626      0.050     12.476      0.000
+    T3                 0.539      0.055      9.820      0.000
+    T4                 0.644      0.049     13.088      0.000
+
+ ASC      BY
+    T5                 0.532      0.048     11.046      0.000
+    T6                 0.770      0.031     25.112      0.000
+    T7                 0.707      0.036     19.875      0.000
+    T8                 0.697      0.036     19.193      0.000
+
+ ESC      BY
+    T9                 0.709      0.044     16.058      0.000
+    T10                0.669      0.046     14.520      0.000
+    T11                0.319      0.064      4.988      0.000
+    T12                0.535      0.054      9.971      0.000
+
+ MSC      BY
+    T13                0.827      0.023     36.501      0.000
+    T14                0.823      0.029     28.805      0.000
+    T15                0.961      0.016     59.207      0.000
+    T16                0.694      0.033     20.724      0.000
+
+ ASC      WITH
+    GSC                0.706      0.055     12.775      0.000
+
+ ESC      WITH
+    GSC                0.551      0.072      7.689      0.000
+    ASC                0.756      0.051     14.683      0.000
+
+ MSC      WITH
+    GSC                0.528      0.058      9.061      0.000
+    ASC                0.755      0.037     20.430      0.000
+    ESC                0.280      0.069      4.035      0.000
+
+ T14      WITH
+    T15               -0.834      0.313     -2.670      0.008
+
+ Variances
+    GSC                1.000      0.000    999.000    999.000
+    ASC                1.000      0.000    999.000    999.000
+    ESC                1.000      0.000    999.000    999.000
+    MSC                1.000      0.000    999.000    999.000
+
+ Residual Variances
+    T1                 0.663      0.061     10.842      0.000
+    T2                 0.608      0.063      9.685      0.000
+    T3                 0.710      0.059     11.995      0.000
+    T4                 0.585      0.063      9.229      0.000
+    T5                 0.717      0.051     13.986      0.000
+    T6                 0.407      0.047      8.625      0.000
+    T7                 0.500      0.050      9.933      0.000
+    T8                 0.513      0.051     10.129      0.000
+    T9                 0.497      0.063      7.928      0.000
+    T10                0.552      0.062      8.938      0.000
+    T11                0.898      0.041     22.071      0.000
+    T12                0.713      0.058     12.404      0.000
+    T13                0.315      0.038      8.404      0.000
+    T14                0.323      0.047      6.857      0.000
+    T15                0.076      0.031      2.422      0.015
+    T16                0.519      0.046     11.161      0.000
+
+
+STD Standardization
+
+                                                    Two-Tailed
+                    Estimate       S.E.  Est./S.E.    P-Value
+
+ GSC      BY
+    T1                 0.782      0.088      8.913      0.000
+    T2                 0.847      0.087      9.710      0.000
+    T3                 0.661      0.081      8.183      0.000
+    T4                 0.736      0.073     10.034      0.000
+
+ ASC      BY
+    T5                 0.743      0.084      8.843      0.000
+    T6                 0.954      0.067     14.129      0.000
+    T7                 0.942      0.075     12.594      0.000
+    T8                 0.947      0.077     12.366      0.000
+
+ ESC      BY
+    T9                 0.816      0.071     11.441      0.000
+    T10                0.729      0.068     10.714      0.000
+    T11                0.542      0.115      4.689      0.000
+    T12                0.693      0.084      8.266      0.000
+
+ MSC      BY
+    T13                1.471      0.091     16.165      0.000
+    T14                1.392      0.091     15.234      0.000
+    T15                1.508      0.075     20.172      0.000
+    T16                0.970      0.076     12.729      0.000
+
+ ASC      WITH
+    GSC                0.706      0.055     12.775      0.000
+
+ ESC      WITH
+    GSC                0.551      0.072      7.689      0.000
+    ASC                0.756      0.051     14.683      0.000
+
+ MSC      WITH
+    GSC                0.528      0.058      9.061      0.000
+    ASC                0.755      0.037     20.430      0.000
+    ESC                0.280      0.069      4.035      0.000
+
+ T14      WITH
+    T15               -0.346      0.073     -4.742      0.000
+
+ Variances
+    GSC                1.000      0.000    999.000    999.000
+    ASC                1.000      0.000    999.000    999.000
+    ESC                1.000      0.000    999.000    999.000
+    MSC                1.000      0.000    999.000    999.000
+
+ Residual Variances
+    T1                 1.201      0.126      9.551      0.000
+    T2                 1.115      0.124      9.019      0.000
+    T3                 1.067      0.107      9.944      0.000
+    T4                 0.764      0.087      8.762      0.000
+    T5                 1.400      0.128     10.920      0.000
+    T6                 0.625      0.069      9.113      0.000
+    T7                 0.886      0.089      9.934      0.000
+    T8                 0.946      0.094     10.025      0.000
+    T9                 0.658      0.083      7.940      0.000
+    T10                0.654      0.075      8.671      0.000
+    T11                2.596      0.233     11.133      0.000
+    T12                1.194      0.118     10.143      0.000
+    T13                0.996      0.106      9.377      0.000
+    T14                0.922      0.126      7.334      0.000
+    T15                0.186      0.075      2.469      0.014
+    T16                1.013      0.092     10.971      0.000
+
+
+R-SQUARE
+
+    Observed                                        Two-Tailed
+    Variable        Estimate       S.E.  Est./S.E.    P-Value
+
+    T1                 0.337      0.061      5.522      0.000
+    T2                 0.392      0.063      6.238      0.000
+    T3                 0.290      0.059      4.910      0.000
+    T4                 0.415      0.063      6.544      0.000
+    T5                 0.283      0.051      5.523      0.000
+    T6                 0.593      0.047     12.556      0.000
+    T7                 0.500      0.050      9.937      0.000
+    T8                 0.487      0.051      9.597      0.000
+    T9                 0.503      0.063      8.029      0.000
+    T10                0.448      0.062      7.260      0.000
+    T11                0.102      0.041      2.494      0.013
+    T12                0.287      0.058      4.985      0.000
+    T13                0.685      0.038     18.250      0.000
+    T14                0.677      0.047     14.402      0.000
+    T15                0.924      0.031     29.604      0.000
+    T16                0.481      0.046     10.362      0.000
+
+
+QUALITY OF NUMERICAL RESULTS
+
+     Condition Number for the Information Matrix              0.236E-02
+       (ratio of smallest to largest eigenvalue)
+
+
+MODEL MODIFICATION INDICES
+
+NOTE:  Modification indices for direct effects of observed dependent variables
+regressed on covariates may not be included.  To include these, request
+MODINDICES (ALL).
+
+Minimum M.I. value for printing the modification index    10.000
+
+                                   M.I.     E.P.C.  Std E.P.C.  StdYX E.P.C.
+
+WITH Statements
+
+T3       WITH T1                  17.119     0.360      0.360        0.318
+
+
+DIAGRAM INFORMATION
+
+  Use View Diagram under the Diagram menu in the Mplus Editor to view the diagram.
+  If running Mplus from the Mplus Diagrammer, the diagram opens automatically.
+
+  Diagram output
+    d:\data\学习\psy\【大三上】结构方程模型\作业和练习\cfa练习1\cfa1_1.dgm
+
+     Beginning Time:  17:51:26
+        Ending Time:  17:51:26
+       Elapsed Time:  00:00:00
+
+
+
+MUTHEN & MUTHEN
+3463 Stoner Ave.
+Los Angeles, CA  90066
+
+Tel: (310) 391-9971
+Fax: (310) 391-8971
+Web: www.StatModel.com
+Support: Support@StatModel.com
+
+Copyright (c) 1998-2019 Muthen & Muthen

@@ -1,0 +1,18 @@
+TITLE:4 factor specify latent variable variance eq 1;
+DATA: FILE IS self.cov;
+ TYPE IS  COVARIANCE;
+ NOBSERVATIONS ARE 265; 
+VARIABLE:
+  NAMES ARE T1-T16;
+  USEVAR = T1-T16;
+MODEL:
+  GSC by T1* T2-T4;
+  ASC by T5* T6-T8;
+  ESC by T9* T10-T12;
+  MSC by T13* T14-T16;
+  GSC@1;
+  ASC@1;
+  ESC@1;
+  MSC@1;
+OUTPUT:
+  MODINDICES STANDARDIZED;
